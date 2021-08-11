@@ -36,6 +36,8 @@
   top: 22px;
   right: 22px;
   color: white;
+  background-color: #1890ff;
+  border: none;
   cursor: pointer;
 }
 
@@ -60,10 +62,12 @@
 #login-card {
   position: relative;
   top: calc(50vh - 144px);
-  left: calc(50vw - 210px);
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 36px;
   padding-bottom: 66px;
-  width: 420px;
+  width: 100vw;
+  max-width: 420px;
   text-align: center;
   background-color: white;
   border-radius: 22px;

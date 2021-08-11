@@ -69,9 +69,9 @@ const Chats = () => {
         <div className="logo-tab">
           ReChat
         </div>
-        <div className="logout-tab" onClick={handleLogout}>
+        <button className="logout-tab" onClick={handleLogout}>
           Logout
-        </div>
+        </button>
       </div>
       <ChatEngine
         height="calc(100vh - 66px)"
