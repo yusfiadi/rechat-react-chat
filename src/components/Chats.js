@@ -11,8 +11,6 @@ const Chats = () => {
   const { user } = useAuth()
   const [isLoading, setIsLoading] = useState(true)
 
-  console.log(user)
-
   const handleLogout = async () => {
     await auth.signOut()
     history.push('/')
