@@ -29,7 +29,7 @@ const Chats = () => {
       return
     }
 
-    axios.get('https://api.chatengine.io/users/me', {
+    axios.get('https://api.chatengine.io/users/me/', {
       headers: {
         "project-id": process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID,
         "user-name": user.email,
@@ -50,7 +50,7 @@ const Chats = () => {
             formdata.append('avatar', avatar, avatar.name)
 
             axios.post(
-              'https://api.chatengine.io/users',
+              'https://api.chatengine.io/users/',
               formdata, {
               headers: {
                 'private-key': process.env.REACT_APP_CHAT_ENGINE_PRIVATE_KEY
