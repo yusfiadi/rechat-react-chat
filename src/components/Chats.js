@@ -55,7 +55,7 @@ const Chats = () => {
               'https://api.chatengine.io/users',
               formdata, {
               headers: {
-                'private-key': process.env.REACT_APP.CHAT_ENGINE_PRIVATE_KEY
+                'private-key': process.env.REACT_APP_CHAT_ENGINE_PRIVATE_KEY
               }
             })
               .then(() => setIsLoading(false))
