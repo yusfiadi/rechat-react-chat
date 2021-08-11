@@ -10,12 +10,10 @@ const Login = () => {
     <div id="login-page">
       <div id="login-card">
         <h2>Welcome to ReChat!</h2>
-        <div
-          className="login-button google"
-          onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
-        >
+
+        <button className="login-button google" onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}>
           <GoogleOutlined /> Sign in With Google
-        </div>
+        </button>
       </div>
     </div>
   )
